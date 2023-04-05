@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>CTFL Quiz - Teste para a Certificação</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div class="progress">
         <div class="progress--bar"></div>
     </div>
+    <div id="timer">40:00</div>
 
     <img src="./ctfl.png" alt="ctfl" style="width: 250px;" id="ctfl-logo"> 
     <h1 id="titulo-inicial">Quiz Certificação CTFL</h1>
@@ -24,11 +25,14 @@
     </div>
 
     <div class="scoreArea">
-        <img src="prize.png" class="prizeImage" />
-        <div class="scoreText1">Parabéns!</div>
+        <img src="Selo-CTFL.png" class="prizeImage" />
+        <div class="scoreText1">Parabéns! Você foi aprovado!</div>
         <div class="scorePct">Acertou 99%</div>
         <div class="scoreText2">Você respondeu 9 questões e acertou 8.</div>
-        <button>Fazer novamente</button>
+        <form action="" method="post">
+            <input onclick="resetEvent()" type="submit" value="Fazer Novamente"></button>
+        </form>
+        
     </div>
 
     <footer id="footer">Criado por Eduardo Decioli. 2023.
