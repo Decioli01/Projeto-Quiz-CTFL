@@ -4,7 +4,11 @@ let currentQuestion = 0;
 let points = 0;
 var timer;
 
-document.querySelector('.scoreArea button').addEventListener('click', resetEvent);
+let scoreArea = document.querySelector('.scoreArea button')
+if(scoreArea){
+    scoreArea.addEventListener('click', resetEvent)
+}
+
 
 //função do botão iniciar
 function comecar() {
@@ -46,7 +50,7 @@ function showQuestion(){
         let q = questions[currentQuestion];
         
         //calcula porcentagem para fazer a animação na barra de progresso avançar conforme avança as questões
-        let pct = ((currentQuestion / questions.length) * 100).toFixed(2);
+        let pct = Math.floor((currentQuestion / questions.length) * 100);
         document.querySelector('.progress--bar').style.width = `${pct}%`;
 
         //esconde a area do resultado e mostra a area das questões
@@ -59,7 +63,7 @@ function showQuestion(){
         //colocar as alternativas
         let optionsHTML = ''; 
         for (let i in q.options) {
-            optionsHTML += `<div data-op="${i}" class='option'><span>${parseInt(i)+1}</span><h4>${q.options[i]}</h4></div>`;
+            optionsHTML += `<div data-op="${i}" class="option"><span>${parseInt(i)+1}</span> ${q.options[i]}</div>`;
         }
         document.querySelector('.options').innerHTML = optionsHTML;
 
@@ -74,13 +78,14 @@ function showQuestion(){
 }    
 
 //função para avançar as questões
-function optionClickEvent(e){
+function optionClickEvent(e) {
     let clickedOption = parseInt(e.target.getAttribute('data-op'));
-
-    if (questions[currentQuestion].answer === clickedOption){
-        points ++;
+    console.log(clickedOption)
+    
+    if(questions[currentQuestion].answer === clickedOption) {
+        points++;
     }
-    currentQuestion ++;
+    currentQuestion++;
     showQuestion();
 }
 

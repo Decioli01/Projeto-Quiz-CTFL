@@ -91,8 +91,8 @@ let questions = [
         //questão 10
         question: 'Qual das seguintes declarações comparando testes de componentes e testes de sistemas é VERDADEIRA?',
         options: [
-            'O teste de componentes verifica a funcionalidade de módulos de software, objetos de programa e classes que são testados separadamente, enquãnto o teste de sistema verifica interfaces entre componentes e interações entre diferentes partes do sistema',
-            'Os casos de teste para teste de componentes são geralmente derivados das especificãções de componentes, especificações de projeto ou modelos de dados, enquanto os casos de teste para teste de sistemas são geralmente derivados das especificações de requisitos ou cãsos de uso',
+            'O teste de componentes verifica a funcionalidade de módulos de software, objetos de programa e classes que são testados separadamente, enquanto o teste de sistema verifica interfaces entre componentes e interações entre diferentes partes do sistema',
+            'Os casos de teste para teste de componentes são geralmente derivados das especificações de componentes, especificações de projeto ou modelos de dados, enquanto os casos de teste para teste de sistemas são geralmente derivados das especificações de requisitos ou casos de uso',
             'O teste de componentes concentra-se apenas nas características funcionais, enquanto o teste de sistemas concentra-se nas características funcionais e não-funcionais',
             'Os testes de componentes são de responsabilidade dos testadores, enquanto os testes de sistemas são tipicamente de responsabilidade dos usuários'
         ],
@@ -202,7 +202,7 @@ let questions = [
         question: 'Qual das seguintes é a descrição da cobertura das declarações?',
         options: [
             'É uma métrica, que é a porcentagem de casos de teste que foram executados',
-            'É uma métrica, que é a porcentãgem de declarações no código fonte que foram executadas',
+            'É uma métrica, que é a porcentagem de declarações no código fonte que foram executadas',
             'É uma métrica, que é o número de declarações no código fonte que foram executadas por casos de teste que são aprovados',
             'É uma métrica, que dá uma confirmação verdadeira/falsa se todas as declarações são cobertas ou não'
         ],
