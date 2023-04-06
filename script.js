@@ -110,6 +110,7 @@ function finishQuiz(){
 }
 //função do botão "Fazer Novamente"
 function resetEvent(){
+    window.location.reload();
     points = 0;
     currentQuestion = 0;
 }
