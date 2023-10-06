@@ -111,7 +111,7 @@ let questions = [
     },
     {
         //questão 12
-        question: 'Qual das seguintes definições e a MELHOR definição de um modelo de desenvolvimento incremental?',
+        question: 'Qual das seguintes definições é a MELHOR definição de um modelo de desenvolvimento incremental?',
         options: [
             'Definição de requisitos, projeto de software e testes são feitos em fases em cada uma parte do sistema que é adicionada',
             'Uma fase no processo de desenvolvimento deve começar quando a fase anterior estiver concluída',
@@ -122,7 +122,7 @@ let questions = [
     },
     {
         //questão 13
-        question: 'Qual dos seguintes itens NAO deve ser um gatilho para testes de manutenção?',
+        question: 'Qual dos seguintes itens NÃO deve ser um gatilho para testes de manutenção?',
         options: [
             'Decisão de testar a possibilidade de manutenção do software',
             'Decisão de testar o sistema após a migração para uma nova plataforma operacional',
