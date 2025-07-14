@@ -104,7 +104,7 @@ function finishQuiz(){
         let parabens = document.querySelector('.scoreText1');
         parabens.innerHTML = 'Que pena!'
         document.querySelector('.scorePct').style.color = '#D31145'
-        document.querySelector('.prizeImage').src = './rejected.png'
+        document.querySelector('.prizeImage').src = './img/rejected.png'
     }
     stopTimer();
 }
