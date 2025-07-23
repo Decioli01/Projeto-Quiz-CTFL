@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CTFL Quiz - Teste para a Certificação</title>
-    <link rel="shortcut icon" href="./img/Selo-CTFL.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="./img/Selo-CTFL.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
     <div class="progress">
         <div class="progress--bar"></div>
     </div>
-    <a href="../home.html"><i class="fa-solid fa-house home-link"></i></a>
+    <a href="../index.html"><i class="fa-solid fa-house home-link"></i></a>
     <div id="timer">60:00</div>
 
-    <img src="./img/ctfl.png" alt="ctfl" style="width: 250px;" id="ctfl-logo"> 
+    <img src="./img/ctfl.png" alt="ctfl" style="width: 250px;" id="ctfl-logo">
     <h1 id="titulo-inicial">Quiz Certificação CTFL</h1>
 
     <button id="start" onclick="comecar()">Iniciar</button>
     <div class="questionArea">
         <div class="question">...</div>
         <div class="options">
-            
+
         </div>
     </div>
 
@@ -33,16 +35,28 @@
         <div class="scoreText1">Parabéns! Você foi aprovado!</div>
         <div class="scorePct">Acertou 99%</div>
         <div class="scoreText2">Você respondeu 9 questões e acertou 8.</div>
-        <button id="reset" onclick="resetEvent()">Fazer Novamente</button>
-        
+        <button id="reset" onclick="resetEvent()">Fazer Novamente</button> <br> <br>
+        <button id="showWrongs" onclick="abrirModal()">Ver Respostas Erradas</button>
+    </div>
+
+    <!-- Modal -->
+    <div id="modalErros" class="modal" style="display:none;">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+        <div class="modal-conteudo">
+            <h2>Respostas Incorretas</h2>
+            <div id="conteudoErros"></div>
+        </div>
     </div>
 
     <footer id="footer">Criado por Eduardo Decioli. 2023.
-        <br> Obs: Este teste não é oficial. Seu intuito é auxiliar os estudantes de teste a praticar o conteúdo afim de conseguir a Certificação CTFL
-        <br> Para mais informações, acesse o portal <a style="color:#D31145" href="https://bstqb.org.br/b9/sobre-ctfl">BSTQB</a>.
+        <br> Obs: Este teste não é oficial. Seu intuito é auxiliar os estudantes de teste a praticar o conteúdo afim de
+        conseguir a Certificação CTFL
+        <br> Para mais informações, acesse o portal <a style="color:#D31145"
+            href="https://bstqb.org.br/b9/sobre-ctfl">BSTQB</a>.
     </footer>
 
     <script src="questions.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
